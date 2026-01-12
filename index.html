@@ -3,40 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Порошковая покраска металлоконструкций в Казани — премиальное покрытие</title>
-  <meta name="description" content="Порошковая покраска металлоконструкций в Казани: ворота, заборы, ограждения, стеллажи, опоры освещения, каркасы, лестницы. Подготовка и пескоструй. Расчёт стоимости онлайн. +7-927-042-22-50" />
+  <title>Порошковая покраска металлоконструкций в Казани — ворота, заборы, ограждения</title>
+  <meta name="description" content="Порошковая покраска металлоконструкций в Казани: откатные/распашные ворота, заборы, ограждения, калитки, стеллажи. Подготовка и пескоструй. Быстрый расчёт. +7-927-042-22-50" />
   <meta name="theme-color" content="#0b1220" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Порошковая покраска металлоконструкций • Казань" />
-  <meta property="og:description" content="Ворота, заборы, ограждения, стеллажи, опоры, каркасы. Подготовка и пескоструй. Онлайн-расчёт. +7-927-042-22-50" />
-  <meta property="og:type" content="website" />
-
-  <!-- LocalBusiness Schema (для каталогов/поиска) -->
+  <!-- Schema for catalogs -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"LocalBusiness",
     "name":"Порошковая покраска металлоконструкций (Казань)",
-    "image":"",
-    "address":{
-      "@type":"PostalAddress",
-      "addressLocality":"Казань",
-      "addressCountry":"RU"
-    },
+    "address":{"@type":"PostalAddress","addressLocality":"Казань","addressCountry":"RU"},
     "telephone":"+79270422250",
     "areaServed":"Казань",
-    "url":"",
     "priceRange":"₽₽",
-    "openingHoursSpecification":[
-      {
-        "@type":"OpeningHoursSpecification",
-        "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-        "opens":"09:00",
-        "closes":"19:00"
-      }
-    ],
-    "sameAs":[]
+    "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"19:00"}]
   }
   </script>
 
@@ -49,12 +30,11 @@
       --line:rgba(11,18,32,.10);
       --shadow: 0 18px 60px rgba(11,18,32,.10);
       --shadow2: 0 10px 30px rgba(11,18,32,.08);
-      --brand:#0f2bff;     /* премиальный синий */
-      --brand2:#00b39b;    /* акцент */
+      --brand:#0f2bff;
+      --brand2:#00b39b;
       --radius:18px;
       --max:1120px;
     }
-
     *{box-sizing:border-box}
     html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
     a{color:inherit;text-decoration:none}
@@ -66,9 +46,7 @@
       border-bottom:1px solid var(--line);
     }
     .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px}
-    .brand{
-      display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.2px
-    }
+    .brand{display:flex;align-items:center;gap:12px;font-weight:900}
     .logo{
       width:36px;height:36px;border-radius:12px;
       background:linear-gradient(135deg,var(--brand),var(--brand2));
@@ -77,12 +55,11 @@
     }
     .logo:after{
       content:"";
-      position:absolute; inset:10px 12px 10px 12px;
+      position:absolute; inset:11px 12px 11px 12px;
       border:2px solid rgba(255,255,255,.85);
       border-left:0;border-right:0;border-radius:6px;
-      opacity:.9;
     }
-    .nav{display:flex;gap:14px;flex-wrap:wrap}
+    .nav{display:flex;gap:10px;flex-wrap:wrap}
     .nav a{color:var(--muted);font-size:14px;padding:10px 12px;border-radius:12px}
     .nav a:hover{background:rgba(11,18,32,.04);color:var(--text)}
     .cta{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
@@ -90,575 +67,20 @@
       display:inline-flex;align-items:center;justify-content:center;gap:10px;
       padding:12px 14px;border-radius:14px;border:1px solid var(--line);
       background:var(--surface); box-shadow: var(--shadow2);
-      font-weight:800;
+      font-weight:900;
     }
     .btn:hover{transform:translateY(-1px)}
     .btn.primary{
-      border:0;
-      color:#fff;
+      border:0;color:#fff;
       background:linear-gradient(135deg,var(--brand),#1a64ff);
       box-shadow: 0 18px 50px rgba(15,43,255,.18);
     }
     .btn.ghost{background:transparent;box-shadow:none}
-    .btn.small{padding:10px 12px;border-radius:12px;font-weight:800}
-
-    /* HERO */
-    .hero{padding:26px 0 12px}
-    .heroGrid{display:grid;grid-template-columns: 1.1fr .9fr;gap:16px;align-items:stretch}
-    @media (max-width: 980px){ .heroGrid{grid-template-columns:1fr} .nav{display:none} }
-    .card{
-      background:var(--surface);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-    }
-    .heroLeft{padding:26px}
-    .kicker{
-      display:inline-flex;align-items:center;gap:10px;
-      padding:8px 12px;border-radius:999px;
-      background:rgba(15,43,255,.06);
-      border:1px solid rgba(15,43,255,.14);
-      color:#2234ff;font-weight:900;font-size:12px;
-    }
-    h1{margin:12px 0 10px;font-size:40px;line-height:1.05;letter-spacing:-.3px}
-    @media (max-width:520px){ h1{font-size:32px} }
-    .sub{margin:0 0 18px;color:var(--muted);font-size:16px;line-height:1.55}
-    .bullets{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0 18px}
-    @media (max-width:520px){ .bullets{grid-template-columns:1fr} }
-    .pill{
-      display:flex;gap:10px;align-items:flex-start;
-      padding:12px;border-radius:16px;border:1px solid var(--line);
-      background:linear-gradient(180deg, rgba(11,18,32,.02), rgba(11,18,32,.00));
-    }
-    .pill b{display:block;font-size:14px}
-    .pill span{display:block;color:var(--muted);font-size:12px;margin-top:2px;line-height:1.35}
-    .heroBtns{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
-
-    /* Calculator */
-    .calc{padding:18px}
-    .calc h2{margin:0 0 8px;font-size:18px}
-    .calc p{margin:0 0 14px;color:var(--muted);font-size:13px;line-height:1.45}
-    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-    @media (max-width:520px){ .grid2{grid-template-columns:1fr} }
-    label{display:block;font-size:12px;color:var(--muted);margin:0 0 6px;font-weight:800}
-    input,select,textarea{
-      width:100%;
-      padding:12px 12px;
-      border-radius:14px;
-      border:1px solid var(--line);
-      background:#fff;
-      font-size:14px;
-      outline:none;
-    }
-    input:focus,select:focus,textarea:focus{
-      border-color: rgba(15,43,255,.35);
-      box-shadow: 0 0 0 6px rgba(15,43,255,.08);
-    }
-    .result{
-      margin-top:12px;
-      padding:14px;
-      border-radius:16px;
-      border:1px solid rgba(0,179,155,.25);
-      background:rgba(0,179,155,.06);
-      display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;
-    }
-    .priceBig{font-size:20px;font-weight:1000}
-    .smallText{color:var(--muted);font-size:12px;line-height:1.35}
-    .divider{height:1px;background:var(--line);margin:18px 0}
-
-    /* Sections */
-    section{padding:12px 0}
-    .sectionTitle{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin:10px 0 12px}
-    .sectionTitle h2{margin:0;font-size:22px}
-    .sectionTitle p{margin:0;color:var(--muted);font-size:14px;line-height:1.45}
-
-    .cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    @media (max-width:980px){ .cards3{grid-template-columns:1fr} }
-    .svc{padding:16px}
-    .svc h3{margin:0 0 8px}
-    .svc p{margin:0;color:var(--muted);line-height:1.55}
-    .tag{
-      display:inline-flex;align-items:center;gap:8px;
-      margin-top:12px;padding:8px 10px;border-radius:999px;
-      border:1px solid var(--line);
-      background:rgba(11,18,32,.02);
-      color:var(--muted);font-size:12px;font-weight:900;
-    }
-    .tag strong{color:var(--text)}
-
-    .why{display:grid;grid-template-columns: 1fr 1fr; gap:14px}
-    @media (max-width:980px){ .why{grid-template-columns:1fr} }
-    .why .box{padding:16px}
-    .check{display:grid;gap:10px;margin-top:10px}
-    .row{display:flex;gap:10px;align-items:flex-start}
-    .ic{
-      width:24px;height:24px;border-radius:10px;
-      background:rgba(15,43,255,.08);
-      border:1px solid rgba(15,43,255,.18);
-      display:grid;place-items:center;
-      color:#2234ff;font-weight:1000;font-size:12px;
-      flex:0 0 auto;
-    }
-    .row b{display:block}
-    .row span{display:block;color:var(--muted);font-size:13px;line-height:1.45;margin-top:2px}
-
-    .process{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-    @media (max-width:980px){ .process{grid-template-columns:1fr 1fr} }
-    @media (max-width:520px){ .process{grid-template-columns:1fr} }
-    .step{padding:14px;border-radius:16px;border:1px solid var(--line);background:rgba(11,18,32,.02)}
-    .step b{display:block;margin-bottom:6px}
-    .step span{color:var(--muted);font-size:13px;line-height:1.45}
-
-    /* Contact */
-    .contactGrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-    @media (max-width:980px){ .contactGrid{grid-template-columns:1fr} }
-    .contact{padding:16px}
-    .phone{font-size:22px;font-weight:1000;margin:6px 0 8px}
-    .note{font-size:12px;color:var(--muted);line-height:1.45}
-    footer{padding:24px 0 42px;color:var(--muted);font-size:13px}
-
-    /* floating mobile CTA */
-    .stickyCTA{
-      display:none;
-      position:fixed;left:14px;right:14px;bottom:14px;z-index:20;
-      gap:10px;
-    }
-    .stickyCTA .btn{flex:1}
-    @media (max-width:980px){ .stickyCTA{display:flex} }
-  </style>
-</head>
-
-<body>
-  <header class="topbar">
-    <div class="wrap">
-      <div class="brand">
-        <span class="logo" aria-hidden="true"></span>
-        <div>
-          <div style="font-size:14px;line-height:1.1">Порошковая покраска</div>
-          <div style="font-size:12px;color:var(--muted);font-weight:800">Металлоконструкции • Казань</div>
-        </div>
-      </div>
-
-      <nav class="nav" aria-label="Навигация">
-        <a href="#services">Услуги</a>
-        <a href="#segments">Сегменты</a>
-        <a href="#process">Как работаем</a>
-        <a href="#calculator">Калькулятор</a>
-        <a href="#contacts">Контакты</a>
-      </nav>
-
-      <div class="cta">
-        <a class="btn small ghost" href="tel:+79270422250">📞 +7-927-042-22-50</a>
-        <a class="btn small primary" href="#calculator">Рассчитать цену</a>
-      </div>
-    </div>
-  </header>
-
-  <main class="wrap">
-
-    <!-- HERO -->
-    <section class="hero">
-      <div class="heroGrid">
-        <div class="card heroLeft">
-          <span class="kicker">ПРЕМИУМ-ПОКРЫТИЕ • СТРОИТЕЛЬНЫЕ И СКЛАДСКИЕ ОБЪЕКТЫ</span>
-          <h1>Порошковая покраска металлоконструкций в Казани</h1>
-          <p class="sub">
-            Ворота, заборы, секции ограждений, стеллажи и складские системы, опоры освещения, каркасы, лестницы и площадки.
-            Подготовка поверхности и пескоструй — <b>есть</b>. Работаем партиями и по контрактам.
-          </p>
-
-          <div class="bullets">
-            <div class="pill">
-              <div class="ic">✓</div>
-              <div>
-                <b>Ровный слой без подтёков</b>
-                <span>электростатика + полимеризация в печи</span>
-              </div>
-            </div>
-            <div class="pill">
-              <div class="ic">✓</div>
-              <div>
-                <b>Антикор + стойкость</b>
-                <span>для улицы и промышленных условий</span>
-              </div>
-            </div>
-            <div class="pill">
-              <div class="ic">✓</div>
-              <div>
-                <b>Стабильное качество партий</b>
-                <span>минимальный брак, повторяемость цвета</span>
-              </div>
-            </div>
-            <div class="pill">
-              <div class="ic">✓</div>
-              <div>
-                <b>Быстрый расчёт</b>
-                <span>по площади/типу изделия и подготовке</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="heroBtns">
-            <a class="btn primary" href="#calculator">🥇 Калькулятор стоимости</a>
-            <a class="btn" href="tel:+79270422250">Позвонить</a>
-            <a class="btn" href="#services">Какие услуги</a>
-          </div>
-
-          <p class="note" style="margin-top:12px">
-            Для Яндекс/2ГИС: добавь точный адрес и часы работы в блоке «Контакты» — я подпишу Schema и карту 1-в-1.
-          </p>
-        </div>
-
-        <!-- CALCULATOR CARD -->
-        <aside class="card calc" id="calculator">
-          <h2>Калькулятор цены (примерно)</h2>
-          <p>
-            Быстро оценит бюджет. Точную стоимость скажем по фото/чертежам и требованиям к подготовке.
-          </p>
-
-          <div class="grid2">
-            <div>
-              <label for="type">Тип изделия</label>
-              <select id="type">
-                <option value="fence">Ограждения / ворота / заборы (ТОП-1)</option>
-                <option value="racks">Стеллажи и складские системы (ТОП-2)</option>
-                <option value="poles">Опоры освещения / мачты (ТОП-3)</option>
-                <option value="frames">Каркасы / строительные конструкции (ТОП-4)</option>
-                <option value="stairs">Лестницы / площадки / перила (ТОП-5)</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="area">Площадь окраски, м²</label>
-              <input id="area" type="number" min="0" step="0.1" value="25" />
-            </div>
-
-            <div>
-              <label for="prep">Подготовка поверхности</label>
-              <select id="prep">
-                <option value="0">Минимальная (чистый металл)</option>
-                <option value="1">Средняя (очистка/обезжиривание)</option>
-                <option value="2">Сложная (коррозия/старая краска)</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="blast">Пескоструй</label>
-              <select id="blast">
-                <option value="0">Не нужен</option>
-                <option value="1">Нужен</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="finish">Финиш</label>
-              <select id="finish">
-                <option value="matte">Матовый (стандарт)</option>
-                <option value="gloss">Глянец</option>
-                <option value="texture">Шагрень/текстура</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="urgency">Срочность</label>
-              <select id="urgency">
-                <option value="normal">Обычный срок</option>
-                <option value="fast">Срочно</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="result" aria-live="polite">
-            <div>
-              <div class="smallText">Оценка стоимости:</div>
-              <div class="priceBig" id="price">—</div>
-              <div class="smallText" id="details">—</div>
-            </div>
-            <div style="display:flex;gap:10px;flex-wrap:wrap">
-              <a class="btn primary" href="tel:+79270422250">Позвонить: +7-927-042-22-50</a>
-              <a class="btn" href="#contacts">Отправить запрос</a>
-            </div>
-          </div>
-
-          <div class="divider"></div>
-
-          <div>
-            <label for="msg">Заявка (опционально)</label>
-            <textarea id="msg" rows="3" placeholder="Например: Ворота 6×2м, 2 шт, цвет RAL 7016, нужна подготовка, сроки 7 дней."></textarea>
-            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
-              <a class="btn primary" id="callLink" href="tel:+79270422250">📞 Позвонить</a>
-              <a class="btn" id="copyBtn" href="javascript:void(0)">Скопировать текст заявки</a>
-            </div>
-            <div class="note" id="copyNote" style="margin-top:8px;display:none">Скопировано ✅ Вставь в WhatsApp/Telegram/SMS.</div>
-          </div>
-
-          <p class="note" style="margin-top:12px">
-            *Это ориентир. Цена зависит от геометрии, подвесов, толщины слоя, цвета и требований к подготовке.
-          </p>
-        </aside>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section id="services">
-      <div class="sectionTitle">
-        <h2>Услуги</h2>
-        <p>Только металлоконструкции (без авто-дисков)</p>
-      </div>
-
-      <div class="cards3">
-        <div class="card svc">
-          <h3>Порошковая покраска</h3>
-          <p>Партии и большие объёмы. Улица/склад/промзона. Цвета по каталогу (RAL и др.), мат/глянец/текстура.</p>
-          <span class="tag"><strong>ТОП:</strong> ворота • заборы • ограждения</span>
-        </div>
-
-        <div class="card svc">
-          <h3>Подготовка поверхности</h3>
-          <p>Очистка, обезжиривание, удаление старого покрытия/ржавчины по степени загрязнения. Стабильное качество партий.</p>
-          <span class="tag"><strong>Важно:</strong> долговечность покрытия</span>
-        </div>
-
-        <div class="card svc">
-          <h3>Пескоструй</h3>
-          <p>Для коррозии, сложных поверхностей и повторной покраски. Улучшает адгезию и повышает срок службы покрытия.</p>
-          <span class="tag"><strong>Рекомендовано:</strong> улица/старый металл</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- SEGMENTS -->
-    <section id="segments">
-      <div class="sectionTitle">
-        <h2>Сегменты, где мы «ТОП-1»</h2>
-        <p>Именно те направления, что дают стабильные заказы и высокую маржу</p>
-      </div>
-
-      <div class="why">
-        <div class="card box">
-          <h3 style="margin:0 0 8px">🥇 ТОП-1. Ограждения, ворота, заборы</h3>
-          <div class="check">
-            <div class="row"><div class="ic">✓</div><div><b>Постоянный спрос</b><span>склады, базы, частные и промышленные объекты</span></div></div>
-            <div class="row"><div class="ic">✓</div><div><b>Часто перекрашивают</b><span>коррозия, смена арендатора, обновление объекта</span></div></div>
-            <div class="row"><div class="ic">✓</div><div><b>Понятная геометрия</b><span>большие объёмы → легко стандартизировать</span></div></div>
-            <div class="row"><div class="ic">✓</div><div><b>Высокая маржа</b><span>серии, повторяемые процессы, минимум брака</span></div></div>
-          </div>
-          <div class="tag" style="margin-top:12px"><strong>Что красим:</strong> откатные/распашные ворота • секции • калитки</div>
-        </div>
-
-        <div class="card box">
-          <h3 style="margin:0 0 8px">🥈 ТОП-2. Стеллажи и складские системы</h3>
-          <div class="check">
-            <div class="row"><div class="ic">✓</div><div><b>Стабильный сегмент</b><span>склады, логистические центры, маркетплейсы</span></div></div>
-            <div class="row"><div class="ic">✓</div><div><b>Красят партиями</b><span>паллентные, полочные, консольные</span></div></div>
-            <div class="row"><div class="ic">✓</div><div><b>Простой цвет</b><span>серый/синий/оранжевый — меньше риска по браку</span></div></div>
-            <div class="row"><div class="ic">✓</div><div><b>Долгие контракты</b><span>удобно работать с производителями</span></div></div>
-          </div>
-          <div class="tag" style="margin-top:12px"><strong>Формат:</strong> серии • повторные заказы • стандарты</div>
-        </div>
-
-        <div class="card box">
-          <h3 style="margin:0 0 8px">🥉 ТОП-3. Опоры освещения и мачты</h3>
-          <div class="check">
-            <div class="row"><div class="ic">✓</div><div><b>Муниципальные и корпоративные</b><span>парковки, ТЦ, заводы, промзоны</span></div></div>
-            <div class="row"><div class="ic">✓</div><div><b>Почти всегда порошок</b><span>покрытие должно быть стойким</span></div></div>
-            <div class="row"><div class="ic">✓</div><div><b>Высокая цена за изделие</b><span>простая форма, хорошая экономика</span></div></div>
-          </div>
-          <div class="tag" style="margin-top:12px"><strong>Примечание:</strong> зависит от габаритов камеры</div>
-        </div>
-
-        <div class="card box">
-          <h3 style="margin:0 0 8px">🏗 ТОП-4. Металлокаркасы и стройконструкции</h3>
-          <div class="check">
-            <div class="row"><div class="ic">✓</div><div><b>Большие объёмы</b><span>каркасы навесов, фермы, балки, колонны</span></div></div>
-            <div class="row"><div class="ic">✓</div><div><b>Отлично как доп. загрузка</b><span>закрывает «провалы» между партиями</span></div></div>
-          </div>
-          <div class="tag" style="margin-top:12px"><strong>Лучше:</strong> в связке с ТОП-1/ТОП-2</div>
-        </div>
-
-        <div class="card box">
-          <h3 style="margin:0 0 8px">🧱 ТОП-5. Лестницы, площадки, ограждения</h3>
-          <div class="check">
-            <div class="row"><div class="ic">✓</div><div><b>Хороший средний чек</b><span>перила, площадки обслуживания, промышленные лестницы</span></div></div>
-            <div class="row"><div class="ic">✓</div><div><b>Постоянные подрядчики</b><span>монтажники и заводы дают повторные заказы</span></div></div>
-          </div>
-          <div class="tag" style="margin-top:12px"><strong>Формат:</strong> заказы от монтажников</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section id="process">
-      <div class="sectionTitle">
-        <h2>Как работаем</h2>
-        <p>Просто, предсказуемо, без сюрпризов</p>
-      </div>
-
-      <div class="process">
-        <div class="step"><b>1) ТЗ и расчёт</b><span>Фото/чертёж, площадь, цвет, требования, сроки. Быстро считаем.</span></div>
-        <div class="step"><b>2) Подготовка</b><span>Очистка/обезжиривание. При необходимости — пескоструй.</span></div>
-        <div class="step"><b>3) Нанесение</b><span>Порошок наносится электростатикой ровным слоем.</span></div>
-        <div class="step"><b>4) Полимеризация</b><span>Запекание в печи. Контроль качества партии.</span></div>
-      </div>
-    </section>
-
-    <!-- CONTACTS -->
-    <section id="contacts">
-      <div class="sectionTitle">
-        <h2>Контакты</h2>
-        <p>Казань • быстро отвечаем</p>
-      </div>
-
-      <div class="contactGrid">
-        <div class="card contact">
-          <div style="font-weight:1000;font-size:16px">Порошковая покраска металлоконструкций</div>
-          <div class="note">Город: Казань</div>
-
-          <div class="phone"><a href="tel:+79270422250">+7-927-042-22-50</a></div>
-          <div class="note">Звоните/пишите: ворота, заборы, ограждения, стеллажи, опоры, каркасы, лестницы.</div>
-
-          <div class="divider"></div>
-
-          <div class="note"><b>Адрес:</b> (вставь точный адрес — и я настрою карту + Schema под Яндекс/2ГИС)</div>
-          <div class="note"><b>Часы:</b> Пн–Сб 09:00–19:00</div>
-
-          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
-            <a class="btn primary" href="tel:+79270422250">📞 Позвонить</a>
-            <a class="btn" href="#calculator">Калькулятор</a>
-          </div>
-
-          <p class="note" style="margin-top:12px">
-            Для каталогов: укажи одинаково телефон/название/адрес на сайте, в Яндекс и 2ГИС (NAP) — это повышает доверие и ранжирование.
-          </p>
-        </div>
-
-        <div class="card contact">
-          <div style="font-weight:1000;margin-bottom:8px">Карта (временная)</div>
-          <div class="note" style="margin-bottom:12px">
-            Сейчас показывает центр Казани. Когда будет адрес — поставим точную точку (Google/Яндекс).
-          </div>
-          <div style="border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#fff">
-            <iframe
-              title="Карта Казань"
-              width="100%" height="340" style="border:0"
-              loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps?q=Kazan&output=embed">
-            </iframe>
-          </div>
-          <p class="note" style="margin-top:10px">
-            *Если целишься в РФ-каталоги — могу заменить на Яндекс.Карты iframe.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      © <span id="y"></span> • Порошковая покраска металлоконструкций • Казань • <a href="tel:+79270422250">+7-927-042-22-50</a>
-    </footer>
-  </main>
-
-  <!-- Mobile sticky CTA -->
-  <div class="stickyCTA" role="region" aria-label="Быстрые действия">
-    <a class="btn primary" href="tel:+79270422250">📞 Позвонить</a>
-    <a class="btn" href="#calculator">💰 Рассчитать</a>
-  </div>
-
-  <script>
-    // year
-    document.getElementById('y').textContent = new Date().getFullYear();
-
-    // base rates (руб/м²) — ориентиры, можно подогнать под твои реальные цифры
-    const base = {
-      fence: 520,
-      racks: 480,
-      poles: 560,
-      frames: 540,
-      stairs: 590
-    };
-
-    // multipliers
-    const prepM = { "0": 1.00, "1": 1.20, "2": 1.45 };
-    const blastM = { "0": 1.00, "1": 1.35 };
-    const finishM = { "matte": 1.00, "gloss": 1.05, "texture": 1.12 };
-    const urgM = { "normal": 1.00, "fast": 1.20 };
-
-    function rub(n){
-      n = Math.round(n);
-      return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " ₽";
-    }
-
-    function calc(){
-      const type = document.getElementById('type').value;
-      const area = parseFloat(document.getElementById('area').value || "0");
-      const prep = document.getElementById('prep').value;
-      const blast = document.getElementById('blast').value;
-      const finish = document.getElementById('finish').value;
-      const urgency = document.getElementById('urgency').value;
-
-      const b = base[type] || 520;
-
-      // защита от нуля
-      if(!area || area <= 0){
-        document.getElementById('price').textContent = "Укажи площадь, м²";
-        document.getElementById('details').textContent = "Например: 25";
-        return;
-      }
-
-      // базовая цена
-      let price = area * b;
-
-      // коэффициенты
-      price *= prepM[prep] * blastM[blast] * finishM[finish] * urgM[urgency];
-
-      // минималка (чтобы не было «смешных» сумм)
-      const minimum = 7000;
-      const final = Math.max(price, minimum);
-
-      // диапазон ±10% (реалистично для онлайн-оценки)
-      const low = final * 0.90;
-      const high = final * 1.10;
-
-      document.getElementById('price').textContent = rub(low) + " — " + rub(high);
-      document.getElementById('details').textContent =
-        `Основа: ${b} ₽/м² • площадь: ${area} м² • подготовка ×${prepM[prep].toFixed(2)} • пескоструй ×${blastM[blast].toFixed(2)} • финиш ×${finishM[finish].toFixed(2)} • срочность ×${urgM[urgency].toFixed(2)} • минималка ${rub(minimum)}`;
-    }
-
-    ["type","area","prep","blast","finish","urgency"].forEach(id=>{
-      document.getElementById(id).addEventListener("input", calc);
-      document.getElementById(id).addEventListener("change", calc);
-    });
-    calc();
-
-    // copy request
-    const copyBtn = document.getElementById("copyBtn");
-    const copyNote = document.getElementById("copyNote");
-    copyBtn.addEventListener("click", async () => {
-      const typeText = document.getElementById("type").selectedOptions[0].textContent.trim();
-      const area = document.getElementById("area").value;
-      const prepText = document.getElementById("prep").selectedOptions[0].textContent.trim();
-      const blastText = document.getElementById("blast").selectedOptions[0].textContent.trim();
-      const finishText = document.getElementById("finish").selectedOptions[0].textContent.trim();
-      const urgText = document.getElementById("urgency").selectedOptions[0].textContent.trim();
-      const msg = document.getElementById("msg").value.trim();
-
-      const text =
-`Заявка на порошковую покраску (Казань)
-Тип: ${typeText}
-Площадь: ${area} м²
-Подготовка: ${prepText}
-Пескоструй: ${blastText}
-Финиш: ${finishText}
-Срочность: ${urgText}
-Комментарий: ${msg || "—"}`;
-
-      try{
-        await navigator.clipboard.writeText(text);
-        copyNote.style.display = "block";
-        setTimeout(()=> copyNote.style.display="none", 1800);
-      }catch(e){
-        alert("Не удалось скопировать автоматически. Скопируй вручную:\n\n" + text);
-      }
-    });
-  </script>
-</body>
-</html>
+    .btn.small{padding:10px 12px;border-radius:12px}
+
+    /* layout */
+    section{padding:14px 0}
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .grid2{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;align-items:stretch}
+    @media (max-width:980px){ .grid2{grid-template-columns:1fr} .nav{display:none} }
+    .heroL
