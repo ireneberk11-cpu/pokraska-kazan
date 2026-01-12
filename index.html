@@ -83,4 +83,536 @@
     .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
     .grid2{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;align-items:stretch}
     @media (max-width:980px){ .grid2{grid-template-columns:1fr} .nav{display:none} }
-    .heroL
+    .heroL{padding:26px}
+    .heroR{padding:18px}
+    .kicker{
+      display:inline-flex;align-items:center;gap:10px;
+      padding:8px 12px;border-radius:999px;
+      background:rgba(15,43,255,.06);
+      border:1px solid rgba(15,43,255,.14);
+      color:#2234ff;font-weight:1000;font-size:12px;
+    }
+    h1{margin:12px 0 10px;font-size:40px;line-height:1.05;letter-spacing:-.3px}
+    @media (max-width:520px){ h1{font-size:32px} }
+    .sub{margin:0 0 16px;color:var(--muted);font-size:16px;line-height:1.55}
+    .points{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0 0}
+    @media (max-width:520px){ .points{grid-template-columns:1fr} }
+    .point{
+      padding:12px;border-radius:16px;border:1px solid var(--line);
+      background:linear-gradient(180deg, rgba(11,18,32,.02), transparent);
+      display:flex;gap:10px;align-items:flex-start;
+    }
+    .ic{
+      width:24px;height:24px;border-radius:10px;
+      background:rgba(15,43,255,.08);
+      border:1px solid rgba(15,43,255,.18);
+      display:grid;place-items:center;color:#2234ff;font-weight:1000;font-size:12px;flex:0 0 auto;
+    }
+    .point b{display:block;font-size:14px}
+    .point span{display:block;color:var(--muted);font-size:12px;margin-top:2px;line-height:1.35}
+    .sectionTitle{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin:10px 0 12px}
+    .sectionTitle h2{margin:0;font-size:22px}
+    .sectionTitle p{margin:0;color:var(--muted);font-size:14px;line-height:1.45}
+
+    /* services */
+    .cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    @media (max-width:980px){ .cards3{grid-template-columns:1fr} }
+    .svc{padding:16px}
+    .svc h3{margin:0 0 8px}
+    .svc p{margin:0;color:var(--muted);line-height:1.55}
+    .tag{
+      display:inline-flex;align-items:center;gap:8px;
+      margin-top:12px;padding:8px 10px;border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(11,18,32,.02);
+      color:var(--muted);font-size:12px;font-weight:1000;
+    }
+
+    /* before-after */
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    @media (max-width:980px){ .gallery{grid-template-columns:1fr} }
+    .gItem{overflow:hidden}
+    .cap{padding:12px 14px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;line-height:1.4}
+    .imgBox{position:relative;aspect-ratio: 4/3; background:#eef1f7}
+    .imgBox img{width:100%;height:100%;object-fit:cover;display:block}
+
+    /* slider */
+    .ba{position:relative;width:100%;height:100%;overflow:hidden}
+    .ba .after{position:absolute;inset:0;clip-path: inset(0 0 0 50%)}
+    .ba .after img,.ba .before img{width:100%;height:100%;object-fit:cover}
+    .ba .handle{
+      position:absolute;top:0;bottom:0;left:50%;
+      width:2px;background:rgba(255,255,255,.95);
+      box-shadow:0 0 0 6px rgba(15,43,255,.12);
+    }
+    .ba .knob{
+      position:absolute;top:50%;left:50%;
+      transform:translate(-50%,-50%);
+      width:38px;height:38px;border-radius:999px;
+      background:linear-gradient(135deg,var(--brand),var(--brand2));
+      border:0; box-shadow: var(--shadow2);
+      display:grid;place-items:center;color:#fff;font-weight:1000;
+    }
+    .ba input[type="range"]{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize}
+    .tagRow{position:absolute;left:12px;right:12px;top:12px;display:flex;justify-content:space-between;gap:10px;pointer-events:none}
+    .tagMini{padding:7px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.35);background:rgba(0,0,0,.28);font-size:12px;color:#fff;font-weight:900}
+
+    /* calculator */
+    .calc h2{margin:0 0 8px;font-size:18px}
+    .calc p{margin:0 0 14px;color:var(--muted);font-size:13px;line-height:1.45}
+    .form2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    @media (max-width:520px){ .form2{grid-template-columns:1fr} }
+    label{display:block;font-size:12px;color:var(--muted);margin:0 0 6px;font-weight:1000}
+    input,select,textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:#fff;
+      font-size:14px;
+      outline:none;
+    }
+    input:focus,select:focus,textarea:focus{
+      border-color: rgba(15,43,255,.35);
+      box-shadow: 0 0 0 6px rgba(15,43,255,.08);
+    }
+    .result{
+      margin-top:12px;
+      padding:14px;
+      border-radius:16px;
+      border:1px solid rgba(0,179,155,.25);
+      background:rgba(0,179,155,.06);
+      display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;
+    }
+    .priceBig{font-size:20px;font-weight:1000}
+    .smallText{color:var(--muted);font-size:12px;line-height:1.35}
+    .divider{height:1px;background:var(--line);margin:16px 0}
+
+    /* process + contacts */
+    .process{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    @media (max-width:980px){ .process{grid-template-columns:1fr 1fr} }
+    @media (max-width:520px){ .process{grid-template-columns:1fr} }
+    .step{padding:14px;border-radius:16px;border:1px solid var(--line);background:rgba(11,18,32,.02)}
+    .step b{display:block;margin-bottom:6px}
+    .step span{color:var(--muted);font-size:13px;line-height:1.45}
+
+    .contactGrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    @media (max-width:980px){ .contactGrid{grid-template-columns:1fr} }
+    .contact{padding:16px}
+    .phone{font-size:22px;font-weight:1000;margin:6px 0 8px}
+    .note{font-size:12px;color:var(--muted);line-height:1.45}
+
+    /* mobile sticky */
+    .stickyCTA{
+      display:none; position:fixed;left:14px;right:14px;bottom:14px;z-index:20; gap:10px;
+    }
+    .stickyCTA .btn{flex:1}
+    @media (max-width:980px){ .stickyCTA{display:flex} }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand">
+        <span class="logo" aria-hidden="true"></span>
+        <div>
+          <div style="font-size:14px;line-height:1.1">Порошковая покраска</div>
+          <div style="font-size:12px;color:var(--muted);font-weight:900">Ворота • заборы • ограждения • Казань</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Навигация">
+        <a href="#services">Услуги</a>
+        <a href="#portfolio">До/После</a>
+        <a href="#process">Процесс</a>
+        <a href="#calculator">Калькулятор</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="cta">
+        <a class="btn small ghost" href="tel:+79270422250">📞 +7-927-042-22-50</a>
+        <a class="btn small primary" href="#calculator">Рассчитать</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section>
+      <div class="grid2">
+        <div class="card heroL">
+          <span class="kicker">🥇 СПЕЦИАЛИЗАЦИЯ: ОГРАЖДЕНИЯ • ВОРОТА • ЗАБОРЫ</span>
+          <h1>Порошковая покраска металлоконструкций в Казани</h1>
+          <p class="sub">
+            Подготовка и пескоструй — есть. Работаем партиями и по контрактам.
+            Делаем покрытие ровным, стойким и одинаковым по всей партии.
+          </p>
+
+          <div class="points">
+            <div class="point"><div class="ic">✓</div><div><b>Улица и промусловия</b><span>стойкость к коррозии и сколам</span></div></div>
+            <div class="point"><div class="ic">✓</div><div><b>Стабильность партий</b><span>повторяемость цвета и качества</span></div></div>
+            <div class="point"><div class="ic">✓</div><div><b>Подготовка поверхности</b><span>очистка / обезжиривание / пескоструй</span></div></div>
+            <div class="point"><div class="ic">✓</div><div><b>Быстрый расчёт</b><span>по м² и сложности</span></div></div>
+          </div>
+
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
+            <a class="btn primary" href="#portfolio">Смотреть “До/После”</a>
+            <a class="btn" href="#calculator">Калькулятор цены</a>
+            <a class="btn" href="tel:+79270422250">Позвонить</a>
+          </div>
+        </div>
+
+        <aside class="card heroR" id="calculator">
+          <h2>Калькулятор (оценка)</h2>
+          <p>Ориентир по бюджету. Точную стоимость подтвердим по фото/чертежам.</p>
+
+          <div class="form2">
+            <div>
+              <label for="type">Изделие</label>
+              <select id="type">
+                <option value="gate">Откатные/распашные ворота</option>
+                <option value="fence">Заборы / секции ограждений</option>
+                <option value="wicket">Калитки / рамные конструкции</option>
+                <option value="racks">Стеллажи / складские системы</option>
+                <option value="stairs">Лестницы / площадки / перила</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="area">Площадь окраски, м²</label>
+              <input id="area" type="number" min="0" step="0.1" value="25" />
+            </div>
+
+            <div>
+              <label for="prep">Состояние металла</label>
+              <select id="prep">
+                <option value="0">Чистый металл</option>
+                <option value="1">Среднее (пыль/окислы)</option>
+                <option value="2">Сложное (ржавчина/старая краска)</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="blast">Пескоструй</label>
+              <select id="blast">
+                <option value="0">Не нужен</option>
+                <option value="1">Нужен</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="finish">Финиш</label>
+              <select id="finish">
+                <option value="matte">Матовый</option>
+                <option value="gloss">Глянец</option>
+                <option value="texture">Текстура</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="urgency">Срок</label>
+              <select id="urgency">
+                <option value="normal">Обычный</option>
+                <option value="fast">Срочно</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="result" aria-live="polite">
+            <div>
+              <div class="smallText">Оценка:</div>
+              <div class="priceBig" id="price">—</div>
+              <div class="smallText" id="details">—</div>
+            </div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap">
+              <a class="btn primary" href="tel:+79270422250">📞 Позвонить</a>
+              <a class="btn" href="#contacts">Запрос</a>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <label for="msg">Текст заявки (скопировать)</label>
+          <textarea id="msg" rows="3" placeholder="Например: Откатные ворота 6×2м, 2 шт, RAL 7016, нужна подготовка, срок 7 дней."></textarea>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
+            <a class="btn" id="copyBtn" href="javascript:void(0)">Скопировать заявку</a>
+            <a class="btn primary" href="tel:+79270422250">+7-927-042-22-50</a>
+          </div>
+          <div class="note" id="copyNote" style="margin-top:8px;display:none">Скопировано ✅</div>
+
+          <p class="note" style="margin-top:12px">
+            *Минималка и коэффициенты можно подстроить под твои реальные цены.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="sectionTitle">
+        <h2>Услуги</h2>
+        <p>Коротко, по делу</p>
+      </div>
+
+      <div class="cards3">
+        <div class="card svc">
+          <h3>Порошковая покраска</h3>
+          <p>Ворота, заборы, секции ограждений, калитки, стеллажи, лестницы. Партии и объёмы.</p>
+          <span class="tag">Финиш: мат / глянец / текстура</span>
+        </div>
+
+        <div class="card svc">
+          <h3>Подготовка</h3>
+          <p>Очистка и обезжиривание. Правильная подготовка = срок службы покрытия.</p>
+          <span class="tag">Для улицы — обязательна</span>
+        </div>
+
+        <div class="card svc">
+          <h3>Пескоструй</h3>
+          <p>Ржавчина, старая краска, сложные поверхности. Улучшает адгезию и результат.</p>
+          <span class="tag">Рекомендуем при перекраске</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+      <div class="sectionTitle">
+        <h2>До / После: откатные ворота и ограждения</h2>
+        <p>Сейчас стоят плейсхолдеры — заменим на твои реальные фото</p>
+      </div>
+
+      <div class="gallery">
+        <!-- Slider 1: sliding gate -->
+        <div class="card gItem">
+          <div class="imgBox">
+            <div class="ba" data-ba>
+              <div class="before">
+                <!-- Replace these 2 links with your real BEFORE/AFTER photos -->
+                <img alt="Откатные ворота — до" src="https://images.unsplash.com/photo-1558236714-d1aab2b54b40?auto=format&fit=crop&w=1200&q=70">
+              </div>
+              <div class="after">
+                <img alt="Откатные ворота — после" src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=70">
+              </div>
+              <div class="tagRow">
+                <span class="tagMini">До</span>
+                <span class="tagMini">После</span>
+              </div>
+              <div class="handle" aria-hidden="true"></div>
+              <button class="knob" type="button" tabindex="-1" aria-hidden="true">↔</button>
+              <input type="range" min="0" max="100" value="50" aria-label="Сравнение до/после">
+            </div>
+          </div>
+          <div class="cap">Откатные ворота — перекраска после коррозии</div>
+        </div>
+
+        <!-- Slider 2: fence section -->
+        <div class="card gItem">
+          <div class="imgBox">
+            <div class="ba" data-ba>
+              <div class="before">
+                <img alt="Секция ограждения — до" src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=1200&q=70">
+              </div>
+              <div class="after">
+                <img alt="Секция ограждения — после" src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=70">
+              </div>
+              <div class="tagRow">
+                <span class="tagMini">До</span>
+                <span class="tagMini">После</span>
+              </div>
+              <div class="handle" aria-hidden="true"></div>
+              <button class="knob" type="button" tabindex="-1" aria-hidden="true">↔</button>
+              <input type="range" min="0" max="100" value="50" aria-label="Сравнение до/после">
+            </div>
+          </div>
+          <div class="cap">Ограждение — подготовка + порошок (улица)</div>
+        </div>
+
+        <!-- Card 3: CTA -->
+        <div class="card gItem" style="padding:16px;display:flex;flex-direction:column;justify-content:space-between;gap:12px">
+          <div>
+            <div style="font-weight:1000;font-size:18px;margin-bottom:6px">Нужно так же?</div>
+            <div style="color:var(--muted);line-height:1.5">
+              Пришли фото и размеры — скажем цену и срок.
+            </div>
+          </div>
+          <a class="btn primary" href="tel:+79270422250">📞 +7-927-042-22-50</a>
+          <a class="btn" href="#calculator">Рассчитать онлайн</a>
+          <div class="note">*Лучше всего работают реальные “до/после” с твоих объектов.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process">
+      <div class="sectionTitle">
+        <h2>Как работаем</h2>
+        <p>4 шага</p>
+      </div>
+
+      <div class="process">
+        <div class="step"><b>1) Расчёт</b><span>Фото/чертёж, площадь, цвет, сроки.</span></div>
+        <div class="step"><b>2) Подготовка</b><span>Очистка / обезжиривание / пескоструй.</span></div>
+        <div class="step"><b>3) Покраска</b><span>Электростатика — ровный слой.</span></div>
+        <div class="step"><b>4) Печь</b><span>Полимеризация и контроль партии.</span></div>
+      </div>
+    </section>
+
+    <!-- CONTACTS -->
+    <section id="contacts">
+      <div class="sectionTitle">
+        <h2>Контакты</h2>
+        <p>Для Яндекс/2ГИС лучше добавить точный адрес</p>
+      </div>
+
+      <div class="contactGrid">
+        <div class="card contact">
+          <div style="font-weight:1000;font-size:16px">Порошковая покраска металлоконструкций</div>
+          <div class="note">Казань</div>
+
+          <div class="phone"><a href="tel:+79270422250">+7-927-042-22-50</a></div>
+          <div class="note">Ворота • заборы • ограждения • калитки • стеллажи • лестницы</div>
+
+          <div class="divider"></div>
+
+          <div class="note"><b>Адрес:</b> (вставь точный — и карта будет 1-в-1)</div>
+          <div class="note"><b>График:</b> Пн–Сб 09:00–19:00</div>
+
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+            <a class="btn primary" href="tel:+79270422250">📞 Позвонить</a>
+            <a class="btn" href="#calculator">Калькулятор</a>
+          </div>
+
+          <p class="note" style="margin-top:12px">
+            Совет: один и тот же телефон/название/адрес (NAP) на сайте, Яндекс и 2ГИС.
+          </p>
+        </div>
+
+        <div class="card contact">
+          <div style="font-weight:1000;margin-bottom:8px">Карта (временная)</div>
+          <div class="note" style="margin-bottom:12px">Пока показывает центр Казани. Заменим на точный адрес.</div>
+          <div style="border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#fff">
+            <iframe
+              title="Карта Казань"
+              width="100%" height="340" style="border:0"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Kazan&output=embed">
+            </iframe>
+          </div>
+          <p class="note" style="margin-top:10px">Если нужно — поставлю Яндекс.Карты.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer style="padding:24px 0 42px;color:var(--muted);font-size:13px">
+      © <span id="y"></span> • Казань • <a href="tel:+79270422250">+7-927-042-22-50</a>
+    </footer>
+  </main>
+
+  <div class="stickyCTA" role="region" aria-label="Быстрые действия">
+    <a class="btn primary" href="tel:+79270422250">📞 Позвонить</a>
+    <a class="btn" href="#calculator">💰 Рассчитать</a>
+  </div>
+
+  <script>
+    // year
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Before/After sliders
+    document.querySelectorAll('[data-ba]').forEach((wrap) => {
+      const range = wrap.querySelector('input[type="range"]');
+      const after = wrap.querySelector('.after');
+      const handle = wrap.querySelector('.handle');
+      const knob = wrap.querySelector('.knob');
+
+      function set(v){
+        const pct = Math.max(0, Math.min(100, v));
+        after.style.clipPath = `inset(0 0 0 ${pct}%)`;
+        handle.style.left = pct + '%';
+        knob.style.left = pct + '%';
+      }
+      range.addEventListener('input', (e)=> set(e.target.value));
+      set(range.value);
+    });
+
+    // Calculator
+    const base = { gate: 560, fence: 520, wicket: 540, racks: 480, stairs: 590 };
+    const prepM = { "0": 1.00, "1": 1.20, "2": 1.45 };
+    const blastM = { "0": 1.00, "1": 1.35 };
+    const finishM = { "matte": 1.00, "gloss": 1.05, "texture": 1.12 };
+    const urgM = { "normal": 1.00, "fast": 1.20 };
+
+    function rub(n){
+      n = Math.round(n);
+      return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " ₽";
+    }
+
+    function calc(){
+      const type = document.getElementById('type').value;
+      const area = parseFloat(document.getElementById('area').value || "0");
+      const prep = document.getElementById('prep').value;
+      const blast = document.getElementById('blast').value;
+      const finish = document.getElementById('finish').value;
+      const urgency = document.getElementById('urgency').value;
+
+      if(!area || area <= 0){
+        document.getElementById('price').textContent = "Укажи площадь, м²";
+        document.getElementById('details').textContent = "Например: 25";
+        return;
+      }
+
+      const b = base[type] || 520;
+      let price = area * b * prepM[prep] * blastM[blast] * finishM[finish] * urgM[urgency];
+
+      const minimum = 7000;
+      const final = Math.max(price, minimum);
+
+      const low = final * 0.90;
+      const high = final * 1.10;
+
+      document.getElementById('price').textContent = rub(low) + " — " + rub(high);
+      document.getElementById('details').textContent =
+        `Основа: ${b} ₽/м² • подготовка ×${prepM[prep].toFixed(2)} • пескоструй ×${blastM[blast].toFixed(2)} • финиш ×${finishM[finish].toFixed(2)} • срочно ×${urgM[urgency].toFixed(2)} • минималка ${rub(minimum)}`;
+    }
+
+    ["type","area","prep","blast","finish","urgency"].forEach(id=>{
+      document.getElementById(id).addEventListener("input", calc);
+      document.getElementById(id).addEventListener("change", calc);
+    });
+    calc();
+
+    // Copy request
+    const copyBtn = document.getElementById("copyBtn");
+    const copyNote = document.getElementById("copyNote");
+    copyBtn.addEventListener("click", async () => {
+      const typeText = document.getElementById("type").selectedOptions[0].textContent.trim();
+      const area = document.getElementById("area").value;
+      const prepText = document.getElementById("prep").selectedOptions[0].textContent.trim();
+      const blastText = document.getElementById("blast").selectedOptions[0].textContent.trim();
+      const finishText = document.getElementById("finish").selectedOptions[0].textContent.trim();
+      const urgText = document.getElementById("urgency").selectedOptions[0].textContent.trim();
+      const msg = document.getElementById("msg").value.trim();
+
+      const text =
+`Заявка на порошковую покраску (Казань)
+Изделие: ${typeText}
+Площадь: ${area} м²
+Состояние: ${prepText}
+Пескоструй: ${blastText}
+Финиш: ${finishText}
+Срок: ${urgText}
+Комментарий: ${msg || "—"}
+Телефон: +7-927-042-22-50`;
+
+      try{
+        await navigator.clipboard.writeText(text);
+        copyNote.style.display = "block";
+        setTimeout(()=> copyNote.style.display="none", 1600);
+      }catch(e){
+        alert("Не удалось скопировать автоматически. Скопируй вручную:\n\n" + text);
+      }
+    });
+  </script>
+</body>
+</html>
